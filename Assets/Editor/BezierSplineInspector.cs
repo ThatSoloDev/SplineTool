@@ -56,7 +56,6 @@ public class BezierSplineInspector : Editor //Refactor
         EditorGUILayout.LabelField("Curves", new GUIStyle() { alignment = TextAnchor.MiddleCenter });
         for (int i = 0; i < _bezierSpline.points.Count; i++)
         {
-            Debug.Log("test");
             if (i == 0)
             {
                 _bezierSpline.points[i] = EditorGUILayout.Vector3Field("Start Point ", _bezierSpline.points[i]);
